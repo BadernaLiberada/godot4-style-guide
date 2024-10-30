@@ -110,7 +110,7 @@ If ur asking why there's behaviour tree, open now the assetlib and download **Li
 |	'-- Themes
 |		|-- TH_Inventory.tres
 |		'-- TH_MainMenu.tres
-|-- VFXLibrary
+'-- VFXLibrary
 	|-- CommonTextures
 	|	'-- T_Star.png
 	'-- ParticleSystems
