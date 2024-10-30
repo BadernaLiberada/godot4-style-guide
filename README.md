@@ -1,9 +1,11 @@
 
 # Godot 4 Style Guide
 Heavenly (yeah) inspired in Allar Unreal Style Guide: https://github.com/Allar/ue5-style-guide/tree/main
+I'm an artist so I won't cover code, there are already several examples for that on the internet.
 ## Asset Prefixes
 
-Each asset type follows a prefix system to ensure quick identification and project consistency. Below is the list of some prefixes:
+Each asset type follows a prefix system to ensure quick identification and project consistency, It could be possible to just use suffixes (.skeleton) but Godot is inconsistent when it comes to that.
+Below is the list of some prefixes:
 
 | Asset Type                         | Prefix   | Sufix                        | Example                          |
 |---------------------------------------|-----------|-------------------------------|----------------------------------|
