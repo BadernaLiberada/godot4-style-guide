@@ -19,7 +19,7 @@ Each asset type follows a prefix system to ensure quick identification and proje
 | **GDScript**                          | `GD_`     |                               | `GD_CharacterMovement.gd`       |
 | **Material**                          | `M_`      |                               | `M_GlobalCharacter.tres`        |
 | **MeshLibrary**                       | `ML_`     |                               | `ML_ModularPieces.meshlib`      |
-| **Particle System**                   | `PS_`     |                               | `PS_Birds.tscn`                 |
+| **Particle "ˢʸˢᵗᵉᵐ"**                 | `PS_`     |                               | `PS_Birds.tscn`                 |
 | **Plugin**                            | `PL_`     |                               | `PL_CustomInspector.gd`         |
 | **Resource**                          | `R_`      |                               | `R_LivingEntity.tres`           |
 | **Shader Code**                       | `SH_`     |                               | `SH_CellShading.gdshader`       |
@@ -28,7 +28,7 @@ Each asset type follows a prefix system to ensure quick identification and proje
 | **Skeletal Mesh**                     | `SK_`     |                               | `SK_ShadowTheHedgehog.fbx`      |
 | **Static Mesh**                       | `SM_`     |                               | `SM_Tree1.fbx`                  |
 | **Sprite**                            | `SPR_`    |                               | `SPR_Character.png`             |
-| **2D artist help me**                            | `I really`    |                               | `never used 2D in godot`             |
+| **2D artists help me**                            | `I really`    |                               | `never used 2D in godot`             |
 | **Texture**                           | `T_`      | `_D`, `_R`, `_N`, `_M`, `_AO`, `_ORM`     | `T_ShadowTheHedgehog_D.png`     |
 | **Theme**                             | `TH_`     |                               | `TH_MainMenu.tres`              |
 | **Tile Map**                          | `TM_`     |                               | `TM_Level1.tscn`                |
@@ -37,90 +37,90 @@ Each asset type follows a prefix system to ensure quick identification and proje
 If ur asking why there's behaviour tree, open now the assetlib and download **LimboAI!!**
 ## Example Project Content Structure
 
-```bash
+```
 |-- Art
-|	|-- Animations
-|	|	'--	AS_Run.tscn
-|	|-- Characters
-|	|	'-- ShadowTheHedgehog
-|	|		|-- SK_ShadowTheHedgehog.fbx
-|	|		|-- M_ShadowTheHedgehog.tres
-|	|		'-- T_ShadowTheHedgehog_D.png
-|	'-- Environment
-|		|-- Foliage
-|		|	|-- SM_Flower1.fbx
-|		|	'-- T_Flower1_D.png
-|		'-- GerudoValley
-|			'-- SM_Store.fbx
+|   |-- Animations
+|   |	'-- AS_Run.tscn
+|   |-- Characters
+|   |	'-- ShadowTheHedgehog
+|   |      |-- SK_ShadowTheHedgehog.fbx
+|   |	   |-- M_ShadowTheHedgehog.tres
+|   |	   '-- T_ShadowTheHedgehog_D.png
+|   '-- Environment
+|	|-- Foliage
+|	|   |-- SM_Flower1.fbx
+|	|   '-- T_Flower1_D.png
+|	'-- GerudoValley
+|	    '-- SM_Store.fbx
 |-- Core
-|	|-- AI
-|	|	|-- Actions
-|	|	|	|-- BTA_Patrol.tres
-|	|	|	'-- BTA_WalkToPoint.tres
-|	|	|-- BlackBoard
-|	|	|	'-- BB_EnemyVariables.tres
-|	|	'-- BehaviourTree
-|	|		'-- BT_EnemyAI.tres
-|	|-- Characters
-|	|	|-- Player
-|	|	|	'-- SC_Player.tscn
-|	|	'-- Enemies
-|	|-- GameplayMechanics
-|	|	|-- GD_CharacterMovement.gd
-|	|	|-- GD_CombatSystem.gd
-|	|	'-- GD_CameraSystem.gd
-|	|-- Engine
-|	|	|-- GD_DialogSystem.gd
-|	|	'-- GD_GameInstance.gd
-|	|-- Interactables
-|	|-- Pickups
-|	|-- Plugins
-|	|-- Resources
-|	|	|-- R_LivingEntity.tres
-|	|	|-- R_Equipment.tres
-|	|	'-- R_SaveFile_tres
-|	'-- Weapons
-|		'-- GD_RangedWeapon.gd
+|   |-- AI
+|   |	|-- Actions
+|   |	|   |-- BTA_Patrol.tres
+|   |	|   '-- BTA_WalkToPoint.tres
+|   |	|-- BlackBoard
+|   |	|   '-- BB_EnemyVariables.tres
+|   |	'-- BehaviourTree
+|   |       '-- BT_EnemyAI.tres
+|   |-- Characters
+|   |	|-- Player
+|   |	|   '-- SC_Player.tscn
+|   |	'-- Enemies
+|   |-- GameplayMechanics
+|   |	|-- GD_CharacterMovement.gd
+|   |	|-- GD_CombatSystem.gd
+|   |	'-- GD_CameraSystem.gd
+|   |-- Engine
+|   |	|-- GD_DialogSystem.gd
+|   |	'-- GD_GameInstance.gd
+|   |-- Interactables
+|   |-- Pickups
+|   |-- Plugins
+|   |-- Resources
+|   |	|-- R_LivingEntity.tres
+|   |	|-- R_Equipment.tres
+|   |	'-- R_SaveFile_tres
+|   '-- Weapons
+|	'-- GD_RangedWeapon.gd
 |-- Docs
-|	|-- README.md
-|	'-- DesignDocumentation.md
+|   |-- README.md
+|   '-- DesignDocumentation.md
 |-- Maps
-|	'-- SC_MainMenu.tscn
+|   '-- SC_MainMenu.tscn
 |-- MaterialLibrary
-|	|-- M_GlobalCharacter.tres
-|	|-- SH_CellShading.gdshader
-|	'-- VS_TerrainTriplanar.tres
+|   |-- M_GlobalCharacter.tres
+|   |-- SH_CellShading.gdshader
+|   '-- VS_TerrainTriplanar.tres
 |-- Placeables
-|	|-- SC_Sign.tscn
-|	'-- SC_Chest.tscn
+|   |-- SC_Sign.tscn
+|   '-- SC_Chest.tscn
 |-- Sound
-|	|-- SFX
-|	|	|-- A_Explosion.ogg
-|	|	'-- Environment
-|	|		'-- A_Waterfall.ogg
-|	|-- Music
-|	|	'-- A_ClubClassics.ogg
-|	'-- Voiceovers
+|   |-- SFX
+|   |	|-- A_Explosion.ogg
+|   |	'-- Environment
+|   |       '-- A_Waterfall.ogg
+|   |-- Music
+|   |	'-- A_ClubClassics.ogg
+|   '-- Voiceovers
 |-- UI
-|	|-- MainMenu
-|	|	'-- T_TitleScreen.png
-|	|-- InGame
-|	|	|-- SC_LifeBar.tscn
-|	|	'-- T_LifeBar.png
-|	'-- Themes
-|		|-- TH_Inventory.tres
-|		'-- TH_MainMenu.tres
+|   |-- MainMenu
+|   |	'-- T_TitleScreen.png
+|   |-- InGame
+|   |	|-- SC_LifeBar.tscn
+|   |	'-- T_LifeBar.png
+|   '-- Themes
+|   	|-- TH_Inventory.tres
+|   	'-- TH_MainMenu.tres
 '-- VFXLibrary
-	|-- CommonTextures
-	|	'-- T_Star.png
-	'-- ParticleSystems
-		|-- PS_Birds.tscn
-		|-- PS_FireTrail.tscn
-		|-- LevelUp
-		|	|-- T_LevelUp.png
-		|	'-- PS_LevelUp.tscn
-		'-- ShadowTheHedgehog
-			'-- PS_HecklerKochMP5A3.tscn
+    |-- CommonTextures
+    |	'-- T_Star.png
+    '-- ParticleSystems
+    	|-- PS_Birds.tscn
+	|-- PS_FireTrail.tscn
+	|-- LevelUp
+	|   |-- T_LevelUp.png
+	|   '-- PS_LevelUp.tscn
+	'-- ShadowTheHedgehog
+	    '-- PS_HecklerKochMP5A3.tscn
 ```
 
 I hope this gives you a general idea of ​​how to separate workspaces, after all, those who are going to work with UI sometimes don't need to open the programmer's folder and vice versa.
